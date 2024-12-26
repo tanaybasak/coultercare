@@ -90,6 +90,23 @@
         "documentation": {}
     },
     {
+        "label": "eel",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "eel",
+        "description": "eel",
+        "detail": "eel",
+        "documentation": {}
+    },
+    {
+        "label": "playsound",
+        "importPath": "playsound",
+        "description": "playsound",
+        "isExtraImport": true,
+        "detail": "playsound",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -99,12 +116,11 @@
         "documentation": {}
     },
     {
-        "label": "eel",
-        "kind": 6,
+        "label": "playassistantsound",
+        "importPath": "engine.features",
+        "description": "engine.features",
         "isExtraImport": true,
-        "importPath": "eel",
-        "description": "eel",
-        "detail": "eel",
+        "detail": "engine.features",
         "documentation": {}
     },
     {
@@ -1293,6 +1309,15 @@
         "description": "coultercare.Scripts.bottle",
         "peekOfCode": "ext = _ImportRedirect('bottle.ext' if __name__ == '__main__' else\n                      __name__ + \".ext\", 'bottle_%s').module\ndef _main(argv):  # pragma: no coverage\n    args, parser = _cli_parse(argv)\n    def _cli_error(cli_msg):\n        parser.print_help()\n        _stderr('\\nError: %s\\n' % cli_msg)\n        sys.exit(1)\n    if args.version:\n        print('Bottle %s' % __version__)",
         "detail": "coultercare.Scripts.bottle",
+        "documentation": {}
+    },
+    {
+        "label": "playassistantsound",
+        "kind": 2,
+        "importPath": "engine.features",
+        "description": "engine.features",
+        "peekOfCode": "def playassistantsound():\n    music_dir = \"www\\\\assets\\\\audio\\\\start_sound.mp3\"\n    playsound(music_dir)",
+        "detail": "engine.features",
         "documentation": {}
     }
 ]

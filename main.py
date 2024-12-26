@@ -1,9 +1,11 @@
 import os
 import eel
+from engine.features import playassistantsound
 
 # Initialize Eel
 try:
-    eel.init('backend\www')
+    eel.init('www')
+    playassistantsound()
     print("Eel initialized successfully.")
 except Exception as e:
     print(f"Error initializing Eel: {e}")
